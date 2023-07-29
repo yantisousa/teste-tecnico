@@ -9,7 +9,7 @@
                     <v-card-text v-html="eletrodomestico.descricao"></v-card-text>
                 </div>
                 <v-card-actions>
-                    <router-link :to="`/eletrodomesticos/edit/${eletrodomestico.id}`">
+                    <router-link class="link" :to="`/eletrodomesticos/edit/${eletrodomestico.id}`">
                         <v-btn>Editar</v-btn>
                     </router-link>
                     <v-btn @click="excluir(eletrodomestico.id)">Excluir</v-btn>
@@ -95,5 +95,8 @@ export default defineComponent({
     position: fixed;
     right: 3px;
     bottom: 0;
+}
+.link {
+    text-decoration: none;
 }
 </style>
