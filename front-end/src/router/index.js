@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   {
-    path: '/eletrodomesticos',
+    path: '/',
     name: 'IndexEletrodomesticos',
     component: () => import('@/views/Eletrodomesticos.vue')
   },

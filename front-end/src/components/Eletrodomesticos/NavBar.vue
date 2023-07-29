@@ -1,7 +1,7 @@
 <template>
   <v-app-bar title="Teste Grupo Plan Marketing " class="bg-primary">
     <v-tabs  v-model="tab">
-      <router-link class="tabs" to="/eletrodomesticos">
+      <router-link class="tabs" to="/">
         <v-tab value="1">Eletrodomésticos</v-tab>
       </router-link>
       <router-link  class="tabs" to="/marcas">

@@ -92,7 +92,7 @@ export default defineComponent({
                     tensao: this.tensao
                 }
                 ).then(() => {
-                this.$router.push('/eletrodomesticos')
+                this.$router.push('/')
             }).catch(() => {
                 
             })
