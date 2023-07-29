@@ -1,6 +1,7 @@
 <template>
-  <v-app-bar title="Teste Grupo Plan Marketing " class="bg-primary">
-    <v-tabs  v-model="tab">
+  <v-app-bar  class="bg-primary">
+    <v-app-bar-title class="no-responsive">Grupo Plan Marketing</v-app-bar-title>
+    <v-tabs v-model="tab">
       <router-link class="tabs" to="/">
         <v-tab value="1">Eletrodomésticos</v-tab>
       </router-link>
@@ -29,5 +30,9 @@ export default defineComponent({
     text-decoration: none;
     color: white;
   }
+@media (max-width: 600px)
+{
+ 
+}
 </style>
   

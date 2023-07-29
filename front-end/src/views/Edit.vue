@@ -1,14 +1,14 @@
 <template>
     <form @submit.prevent="update()">
         <v-row class="align-center justify-center mt-12">
-            <v-col cols="4">
+            <v-col cols="10" md="4">
                 <v-text-field variant="underlined" label="Nome:" v-model="nome">
 
                 </v-text-field>
             </v-col>
         </v-row>
         <v-row class="align-center justify-center mt-12">
-            <v-col cols="4">
+            <v-col cols="10" md="4">
                 <div id="app" class="mt-3">
                     <ckeditor :editor="editor" v-model="editorData" :config="editorConfig">
                     </ckeditor>
@@ -16,20 +16,20 @@
             </v-col>
         </v-row>
         <v-row class="align-center justify-center mt-12">
-            <v-col cols="4">
+            <v-col cols="10" md="4">
                 <v-text-field variant="underlined" label="Tensão:" v-model="tensao">
 
                 </v-text-field>
             </v-col>
         </v-row>
         <v-row class="align-center justify-center mt-12">
-            <v-col cols="4">
+            <v-col cols="10" md="4">
                 <v-select label="Marcas:" v-model="marca" :items="marcas" item-title="nome" variant="underlined"
                     item-value="id"></v-select>
             </v-col>
         </v-row>
         <v-row class="align-center justify-center mt-12">
-            <v-col cols="4">
+            <v-col cols="10" md="4">
                 <v-btn type="submit" class="botao-sucess" color="success">SALVAR</v-btn>
             </v-col>
         </v-row>
